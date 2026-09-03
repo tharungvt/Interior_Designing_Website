@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #0056d2;
+  --blue-hover: #0046b0;
+  --text: #4b5563;
+  --heading: #111827;
+  --bg: #ffffff;
+  --muted: #f3f4f6;
+  --muted-blue: #eef2f7;
+  --border: #e5e7eb;
+  --white: #ffffff;
+  --sans: Inter, system-ui, "Segoe UI", Roboto, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100svh;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Existing Navbar.jsx markup — styled only, not rewritten */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 16px 48px;
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+
+nav h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--heading);
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+nav > div:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--blue);
+}
+
+/* Existing Footer.jsx markup — styled only, not rewritten */
+footer {
+  margin-top: auto;
+  padding: 28px 48px;
+  background: #f9fafb;
+  border-top: 1px solid var(--border);
+  color: #6b7280;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  nav,
+  footer {
+    padding-inline: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  nav > div:last-child {
+    justify-content: flex-start;
+  }
+}
