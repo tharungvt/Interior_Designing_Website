@@ -64,12 +64,12 @@ export function ServiceCard({ service, isFeatured = false }) {
           <span className="text-xs font-semibold text-brand-charcoal uppercase tracking-wider group-hover:underline break-words">
             {service.cta?.label || "EXPLORE RESIDENTIAL WORK"}
           </span>
-          <Button
-            href={targetLink}
-            ariaLabel={service.cta?.label || `Explore ${service.title}`}
-            variant="circle-arrow"
-            className="w-10 h-10 bg-brand-charcoal group-hover:bg-brand-mineral text-white group-hover:scale-105"
-          />
+     <Button
+        href={targetLink}
+        ariaLabel={service.cta?.label || `Explore ${service.title}`}
+        variant="circle-arrow"
+        className="w-10 h-10 bg-white/90 text-brand-charcoal hover:bg-brand-charcoal hover:text-white group-hover:scale-105"
+      />
         </div>
       </div>
     );

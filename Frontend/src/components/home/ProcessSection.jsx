@@ -57,8 +57,8 @@ function ProcessSection({ steps: stepsProp, content }) {
   const cp1 = { x: p1.x + (p2.x - p1.x) * 0.48, y: p1.y - 40 };
   const cp2 = { x: p2.x - (p2.x - p1.x) * 0.35, y: p2.y };
   const cp3 = { x: p2.x + (p3.x - p2.x) * 0.45, y: p2.y + 40 };
-  const cp4 = { x: p3.x - (p3.x - p2.x) * 0.45, y: p3.y - 20 };
-  const cp5 = { x: p3.x + (p4.x - p3.x) * 0.45, y: p3.y - 20 };
+  const cp4 = { x: p3.x - (p3.x - p2.x) * 0.45, y: p3.y };
+  const cp5 = { x: p3.x + (p4.x - p3.x) * 0.45, y: p3.y };
   const cp6 = { x: p4.x - (p4.x - p3.x) * 0.45, y: p4.y + 40 };
   const cp7 = { x: p4.x + (p5.x - p4.x) * 0.35, y: p4.y };
   const cp8 = { x: p5.x - (p5.x - p4.x) * 0.48, y: p5.y - 40 };
