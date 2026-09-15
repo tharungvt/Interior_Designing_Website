@@ -1,0 +1,15 @@
+{
+  "name": "interior-designing-website",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "Frontend",
+    "Backend"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=Frontend",
+    "build": "npm run build --workspace=Frontend",
+    "lint": "npm run lint --workspace=Frontend",
+    "preview": "npm run preview --workspace=Frontend"
+  }
+}
