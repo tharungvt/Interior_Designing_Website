@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 800" width="1600" height="800" fill="none">
+  <defs>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#DEEBF4"/>
+      <stop offset="100%" stop-color="#EDF4F8"/>
+    </linearGradient>
+    <linearGradient id="wallWaveGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EAF2F4" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#DFEAEE" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="floorGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ECEAE4"/>
+      <stop offset="100%" stop-color="#DFDCD5"/>
+    </linearGradient>
+    <linearGradient id="lampGlow" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#FFF8E7" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FFF8E7" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Clean Off-White Wall Base -->
+  <rect width="1600" height="800" fill="#F6F9F9"/>
+
+  <!-- Soft organic curved architectural wall accents -->
+  <path d="M 380 0 C 440 240, 520 280, 720 340 C 940 400, 1100 580, 1180 800 L 0 800 L 0 0 Z" fill="url(#wallWaveGrad)"/>
+  <ellipse cx="880" cy="350" rx="65" ry="55" fill="#E2EDF0" opacity="0.6"/>
+  <path d="M 680 0 C 820 180, 980 260, 1300 380 L 1600 420 L 1600 0 Z" fill="#F0F5F6" opacity="0.5"/>
+
+  <!-- Floor Plane -->
+  <polygon points="0,670 1600,670 1600,800 0,800" fill="url(#floorGrad)"/>
+  <line x1="0" y1="670" x2="1600" y2="670" stroke="#D3CFC6" stroke-width="1.5"/>
+
+  <!-- Floor Area Rug -->
+  <polygon points="80,690 900,690 840,780 40,780" fill="#DCE3E6" stroke="#CAD5D9" stroke-width="1.5"/>
+
+  <!-- Window Frame on Left (Architectural Multi-Pane Grid) -->
+  <rect x="0" y="0" width="290" height="690" fill="url(#skyGrad)"/>
+  <!-- Distant City & Green Trees through Window -->
+  <path d="M 0 540 Q 60 480 120 530 T 220 510 T 290 530 L 290 690 L 0 690 Z" fill="#9FBCA4" opacity="0.6"/>
+  <path d="M 0 570 Q 70 520 150 560 T 290 545 L 290 690 L 0 690 Z" fill="#7D9F83" opacity="0.8"/>
+  <rect x="40" y="420" width="30" height="150" fill="#CAD8DF" opacity="0.5"/>
+  <rect x="110" y="380" width="45" height="190" fill="#BCCED7" opacity="0.5"/>
+  <rect x="180" y="440" width="35" height="130" fill="#CAD8DF" opacity="0.5"/>
+
+  <!-- Black Window Mullions -->
+  <rect x="0" y="0" width="290" height="690" fill="none" stroke="#262D35" stroke-width="8"/>
+  <line x1="68" y1="0" x2="68" y2="690" stroke="#262D35" stroke-width="5"/>
+  <line x1="168" y1="0" x2="168" y2="690" stroke="#262D35" stroke-width="5"/>
+  <line x1="0" y1="220" x2="290" y2="220" stroke="#262D35" stroke-width="5"/>
+  <line x1="0" y1="450" x2="290" y2="450" stroke="#262D35" stroke-width="5"/>
+
+  <!-- Ceiling Pendant Lamp -->
+  <line x1="335" y1="0" x2="335" y2="150" stroke="#262D35" stroke-width="3"/>
+  <path d="M 280 215 C 280 160, 390 160, 390 215 Z" fill="#242B33"/>
+  <ellipse cx="335" cy="215" rx="55" ry="12" fill="#FAF1D2"/>
+  <polygon points="275,225 395,225 460,420 210,420" fill="url(#lampGlow)"/>
+
+  <!-- Vertical Wood Slat Wall Panel -->
+  <g id="woodSlats">
+    <rect x="340" y="240" width="10" height="430" fill="#B98B5E"/>
+    <rect x="355" y="240" width="10" height="430" fill="#A8794E"/>
+    <rect x="370" y="240" width="10" height="430" fill="#B98B5E"/>
+    <rect x="385" y="240" width="10" height="430" fill="#A8794E"/>
+    <rect x="400" y="240" width="10" height="430" fill="#B98B5E"/>
+    <rect x="415" y="240" width="10" height="430" fill="#A8794E"/>
+  </g>
+
+  <!-- Floating Wall Shelves -->
+  <rect x="425" y="380" width="205" height="10" fill="#9C6F45"/>
+  <rect x="425" y="460" width="205" height="10" fill="#9C6F45"/>
+
+  <!-- Top Shelf Items: Books, Blue Vase, Potted Ivy -->
+  <rect x="430" y="345" width="40" height="35" rx="1" fill="#FFFFFF" stroke="#D1D7DC"/>
+  <ellipse cx="450" cy="345" rx="16" ry="5" fill="#5F886B"/>
+  <path d="M 435 365 Q 425 410 445 445 Q 455 420 440 375" fill="none" stroke="#5F886B" stroke-width="2.5"/>
+  <path d="M 455 365 Q 465 425 450 455" fill="none" stroke="#5F886B" stroke-width="2.5"/>
+
+  <!-- Books on top shelf -->
+  <rect x="495" y="360" width="40" height="8" fill="#F0EDE6" stroke="#D8D3C8"/>
+  <rect x="498" y="352" width="34" height="8" fill="#D3DEE4" stroke="#B8C8D2"/>
+  <!-- Navy ceramic vase -->
+  <path d="M 548 380 C 538 360, 538 340, 548 335 C 555 330, 560 330, 565 335 C 575 340, 575 360, 565 380 Z" fill="#2A4867"/>
+
+  <!-- Lower Shelf Items: Books & Succulent -->
+  <rect x="480" y="415" width="10" height="45" fill="#335A7D"/>
+  <rect x="492" y="412" width="12" height="48" fill="#4B6F8E"/>
+  <rect x="506" y="420" width="10" height="40" fill="#E8E2D5"/>
+  <rect x="518" y="423" width="14" height="37" fill="#657C89"/>
+  <!-- Succulent on right -->
+  <rect x="575" y="435" width="24" height="25" fill="#FFFFFF" stroke="#DCE1E4"/>
+  <circle cx="587" cy="430" r="14" fill="#5A8366"/>
+
+  <!-- Minimalist Framed Art on Wall -->
+  <rect x="645" y="325" width="105" height="140" fill="#FFFFFF" stroke="#222830" stroke-width="4"/>
+  <!-- Circles Art -->
+  <circle cx="688" cy="378" r="28" fill="#BDB5A4" opacity="0.8"/>
+  <circle cx="704" cy="412" r="26" fill="#35587A" opacity="0.9"/>
+
+  <!-- Potted Small Plant Behind Sofa -->
+  <rect x="780" y="515" width="22" height="28" fill="#243C56"/>
+  <ellipse cx="791" cy="495" rx="20" ry="20" fill="#4D7658"/>
+
+  <!-- Modern Console Cabinet Behind Sofa -->
+  <rect x="760" y="540" width="100" height="130" fill="#EFECE6" stroke="#D3CDC2"/>
+  <line x1="770" y1="670" x2="770" y2="690" stroke="#7A5636" stroke-width="4"/>
+  <line x1="850" y1="670" x2="850" y2="690" stroke="#7A5636" stroke-width="4"/>
+
+  <!-- Modern Armchair (Muted Slate Teal) on Left -->
+  <g id="armchair">
+    <!-- Legs -->
+    <line x1="105" y1="695" x2="95" y2="745" stroke="#684A30" stroke-width="6" stroke-linecap="round"/>
+    <line x1="195" y1="695" x2="205" y2="745" stroke="#684A30" stroke-width="6" stroke-linecap="round"/>
+    <line x1="130" y1="680" x2="125" y2="735" stroke="#523924" stroke-width="5" stroke-linecap="round"/>
+    <line x1="260" y1="680" x2="270" y2="735" stroke="#523924" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Chair Body & Seat -->
+    <path d="M 80 610 C 75 560, 90 550, 120 550 L 250 550 C 270 550, 285 570, 280 610 L 270 680 L 90 680 Z" fill="#3F6E8F"/>
+    <!-- Cushion -->
+    <rect x="75" y="625" width="210" height="55" rx="8" fill="#4D7D9F"/>
+    <!-- Lumbar Pillow -->
+    <rect x="135" y="585" width="85" height="50" rx="6" fill="#F4EFEA" transform="rotate(-6 177 610)"/>
+  </g>
+
+  <!-- Potted Fiddle Leaf Plant beside Armchair -->
+  <g id="indoorPlantsLeft">
+    <ellipse cx="25" cy="650" rx="30" ry="40" fill="#FFFFFF" stroke="#D4D9DC" stroke-width="2"/>
+    <path d="M 20 600 Q -10 520 -30 480 Q 20 490 30 570 Z" fill="#5F886B"/>
+    <path d="M 25 590 Q 50 490 85 450 Q 75 530 35 590 Z" fill="#4F775B"/>
+    <path d="M 30 610 Q 80 550 115 540 Q 85 590 35 620 Z" fill="#6B9678"/>
+  </g>
+
+  <!-- Modern Beige Sofa in Center -->
+  <g id="sofa">
+    <!-- Backrest -->
+    <rect x="330" y="525" width="510" height="110" rx="10" fill="#EAE5DC" stroke="#DCD5C9"/>
+    <!-- Cushions -->
+    <rect x="345" y="600" width="155" height="70" rx="8" fill="#F3EFE9" stroke="#DFD8CC"/>
+    <rect x="505" y="600" width="155" height="70" rx="8" fill="#F3EFE9" stroke="#DFD8CC"/>
+    <rect x="665" y="600" width="155" height="70" rx="8" fill="#F3EFE9" stroke="#DFD8CC"/>
+    <!-- Throw Pillows -->
+    <rect x="385" y="535" width="85" height="75" rx="6" fill="#243F5C"/>
+    <rect x="465" y="550" width="70" height="60" rx="6" fill="#577D9E"/>
+    <rect x="620" y="555" width="60" height="55" rx="6" fill="#F6F2EA"/>
+    <!-- Draped Blue Blanket -->
+    <path d="M 720 610 L 780 610 L 785 700 L 720 700 Z" fill="#3D6889"/>
+
+    <!-- Sofa Legs -->
+    <line x1="350" y1="670" x2="345" y2="705" stroke="#684A30" stroke-width="6" stroke-linecap="round"/>
+    <line x1="820" y1="670" x2="825" y2="705" stroke="#684A30" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Round Wooden Coffee Table -->
+  <g id="coffeeTable">
+    <!-- Metal legs -->
+    <line x1="420" y1="680" x2="420" y2="735" stroke="#252A30" stroke-width="4"/>
+    <line x1="660" y1="680" x2="660" y2="735" stroke="#252A30" stroke-width="4"/>
+    <line x1="420" y1="735" x2="660" y2="735" stroke="#252A30" stroke-width="4"/>
+    <!-- Wooden Tabletop -->
+    <ellipse cx="540" cy="670" rx="160" ry="24" fill="#9C6D44"/>
+    <ellipse cx="540" cy="666" rx="160" ry="24" fill="#AF7E52"/>
+    <!-- Books on Table -->
+    <rect x="480" y="642" width="65" height="12" rx="1" fill="#313942"/>
+    <rect x="485" y="635" width="55" height="8" rx="1" fill="#FFFFFF" stroke="#D1D7DC"/>
+    <!-- White ceramic vase on table -->
+    <ellipse cx="585" cy="648" rx="15" ry="12" fill="#FFFFFF" stroke="#D5DCE0"/>
+    <path d="M 585 640 Q 575 620 570 615 Q 585 625 585 640 Z" fill="#5F886B"/>
+    <path d="M 585 640 Q 595 615 605 618 Q 595 628 585 640 Z" fill="#4D7658"/>
+  </g>
+
+  <!-- Tripod Floor Lamp -->
+  <g id="tripodLamp">
+    <!-- 3 Wooden Legs -->
+    <line x1="880" y1="510" x2="840" y2="715" stroke="#7A5636" stroke-width="5" stroke-linecap="round"/>
+    <line x1="880" y1="510" x2="915" y2="715" stroke="#7A5636" stroke-width="5" stroke-linecap="round"/>
+    <line x1="880" y1="510" x2="880" y2="705" stroke="#5C3E25" stroke-width="4" stroke-linecap="round"/>
+    <!-- Shade -->
+    <polygon points="850,515 910,515 898,435 862,435" fill="#FAF6EE" stroke="#DDD6C8" stroke-width="1.5"/>
+    <ellipse cx="880" cy="435" rx="18" ry="5" fill="#EAE3D5"/>
+    <ellipse cx="880" cy="515" rx="30" ry="8" fill="#FFFBEF"/>
+  </g>
+
+  <!-- Potted Fiddle Leaf Fig on Far Right -->
+  <g id="plantsRight">
+    <rect x="970" y="670" width="50" height="60" rx="10" fill="#FFFFFF" stroke="#D7DCE0" stroke-width="2"/>
+    <path d="M 995 660 Q 940 590 920 500 Q 970 540 995 660 Z" fill="#4B7456"/>
+    <path d="M 995 660 Q 1020 560 1060 480 Q 1040 570 995 660 Z" fill="#5E876A"/>
+    <path d="M 995 660 Q 995 540 1000 460 Q 1015 540 995 660 Z" fill="#3D6347"/>
+  </g>
+</svg>
