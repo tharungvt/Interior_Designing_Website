@@ -1,0 +1,8 @@
+{
+  "name": "Interior Design Studio",
+  "description": "A modern interior design studio website showcasing residential and commercial interior design services, project portfolios, and consultations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
