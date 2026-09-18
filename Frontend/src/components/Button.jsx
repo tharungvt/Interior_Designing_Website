@@ -46,6 +46,8 @@ function Button({
       "inline-flex items-center justify-center gap-2 bg-brand-charcoal hover:bg-brand-mineral text-white text-xs font-semibold px-4 sm:px-5 py-2.5 rounded-full transition-all shadow-glow-atelier hover:scale-[1.02] cursor-pointer shrink-0 text-center whitespace-nowrap",
     outline:
       "inline-flex items-center justify-center px-5 py-2.5 rounded-full border border-brand-border text-brand-charcoal bg-white hover:bg-brand-surface font-medium tracking-wide text-xs sm:text-sm transition-colors text-center cursor-pointer",
+      "text-arrow":
+  "inline-flex items-center justify-center gap-2 text-brand-charcoal hover:text-brand-mineral font-medium text-xs sm:text-sm transition-colors cursor-pointer",
     "circle-arrow":
       "w-10 h-10 rounded-full bg-white/90 backdrop-blur-sm border border-brand-border/80 flex items-center justify-center text-brand-charcoal hover:bg-brand-charcoal hover:text-white transition-all shadow-sm cursor-pointer shrink-0",
   };
@@ -97,7 +99,7 @@ function Button({
         ? defaultArrow
         : variant === "secondary"
         ? diagonalArrow
-        : variant === "circle-arrow"
+        : variant === "circle-arrow"  || variant === "text-arrow"
         ? defaultArrow
         : null
       : null;
