@@ -7,7 +7,7 @@
  */
 
 // Hero & CTA Assets
-import heroProjects from "../assets/projects/hero-projects.png";
+import heroProjects from "../assets/projects/hero-living-room.png";
 import ctaDesk from "../assets/projects/cta-desk.png";
 
 // Featured Project Assets
