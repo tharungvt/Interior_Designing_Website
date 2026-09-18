@@ -1,4 +1,4 @@
-import whyChooseVector from "../../assets/why-choose-vector.svg";
+import whyChooseImage from "../../assets/about/why-before-after.png";
 import { aboutContent } from "../../data/aboutContent";
 
 function WhyChooseUsSection({ content = aboutContent.whyChooseUs }) {
@@ -14,10 +14,11 @@ function WhyChooseUsSection({ content = aboutContent.whyChooseUs }) {
     >
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden select-none">
         <img
-          src={whyChooseVector}
-          alt="Interior design modern living room sketch illustration"
+          src={whyChooseImage}
+          alt="Interior design before and after"
           className="w-full h-full object-cover object-bottom opacity-40 mix-blend-multiply pointer-events-none"
         />
+
         <div className="absolute inset-0 bg-gradient-to-r from-[#F1F5F4]/70 via-[#F1F5F4]/50 to-[#F1F5F4]/80 pointer-events-none"></div>
       </div>
 
@@ -28,9 +29,11 @@ function WhyChooseUsSection({ content = aboutContent.whyChooseUs }) {
               {content.eyebrow}
             </span>
           )}
+
           <h2 className="text-3xl lg:text-4xl font-bold text-[#17252C] tracking-tight mb-3 font-['Plus_Jakarta_Sans',sans-serif]">
             {content.heading}
           </h2>
+
           <p className="text-slate-600 max-w-2xl text-base leading-relaxed mx-auto">
             {content.description}
           </p>
@@ -46,10 +49,12 @@ function WhyChooseUsSection({ content = aboutContent.whyChooseUs }) {
                 <span className="text-2xl font-bold text-[#4B6B86] font-['Plus_Jakarta_Sans',sans-serif] min-w-[36px]">
                   {pillar.number}
                 </span>
+
                 <div>
                   <h3 className="text-lg font-bold text-[#17252C] font-['Plus_Jakarta_Sans',sans-serif]">
                     {pillar.title}
                   </h3>
+
                   <p className="text-sm text-slate-600 mt-1 leading-relaxed">
                     {pillar.description}
                   </p>

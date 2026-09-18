@@ -7,55 +7,94 @@ import home05 from "../assets/home/home-interior-05.png";
 import home06 from "../assets/home/home-interior-06.png";
 import home07 from "../assets/home/home-interior-07.png";
 import home08 from "../assets/home/home-interior-08.png";
-import ctaDesk from "../assets/cta-desk.png";
+
+// About page images
+import beforeAfter from "../assets/about/before-after.jpg";
+import ctaDeskJpg from "../assets/about/cta-desk.jpg";
+import ctaDeskPng from "../assets/about/cta-desk.png";
+import heroLivingRoom from "../assets/about/hero-living-room.png";
+import heroPenthouse from "../assets/about/hero-penthouse.jpg";
+import introKitchen from "../assets/about/intro-kitchen.jpg";
+import introMaterialsJpg from "../assets/about/intro-materials.jpg";
+import introMaterialsPng from "../assets/about/intro-materials.png";
+import projectWorkspace from "../assets/about/project-workspace.png";
+import whyBeforeAfter from "../assets/about/why-before-after.png";
 
 /**
- * Registry of approved local assets for the interior design studio.
- * Supports mapping by filename, short identifier, or direct imported asset.
+ * Registry of approved local assets.
  */
 export const LOCAL_IMAGES = {
+  // Home
   "home-hero": homeHero,
   "Home-Hero.png": homeHero,
+
   "home-interior-01": home01,
   "home-interior-01.png": home01,
+
   "home-interior-02": home02,
   "home-interior-02.png": home02,
+
   "home-interior-03": home03,
   "home-interior-03.png": home03,
+
   "home-interior-04": home04,
   "home-interior-04.png": home04,
+
   "home-interior-05": home05,
   "home-interior-05.png": home05,
+
   "home-interior-06": home06,
   "home-interior-06.png": home06,
+
   "home-interior-07": home07,
   "home-interior-07.png": home07,
+
   "home-interior-08": home08,
   "home-interior-08.png": home08,
-  "cta-desk": ctaDesk,
-  "cta-desk.png": ctaDesk,
+
+  // About
+  "before-after": beforeAfter,
+  "before-after.jpg": beforeAfter,
+
+  "cta-desk": ctaDeskPng,
+  "cta-desk.jpg": ctaDeskJpg,
+  "cta-desk.png": ctaDeskPng,
+
+  "hero-living-room": heroLivingRoom,
+  "hero-living-room.png": heroLivingRoom,
+
+  "hero-penthouse": heroPenthouse,
+  "hero-penthouse.jpg": heroPenthouse,
+
+  "intro-kitchen": introKitchen,
+  "intro-kitchen.jpg": introKitchen,
+
+  "intro-materials": introMaterialsPng,
+  "intro-materials.jpg": introMaterialsJpg,
+  "intro-materials.png": introMaterialsPng,
+
+  "project-workspace": projectWorkspace,
+  "project-workspace.png": projectWorkspace,
+
+  "why-before-after": whyBeforeAfter,
+  "why-before-after.png": whyBeforeAfter,
 };
 
 /**
- * Resolves an image value to a valid img src attribute.
- *
- * Architecture readiness:
- * - When an Admin Panel / Backend API provides a remote URL (https://...), absolute path (/uploads/...),
- *   or data URI (data:...), it is returned immediately.
- * - When given a local filename or key, it resolves to the bundled local asset from Frontend/src/assets/home/.
- * - Falls back cleanly if the image is undefined or unavailable.
- *
- * @param {string|object} imageSource - The image identifier, URL, or imported module
- * @param {string|object} fallback - Optional fallback image
- * @returns {string} The resolved image src
+ * Resolves an image value to a valid img src.
  */
 export function resolveImage(imageSource, fallback = homeHero) {
-  if (!imageSource) return fallback;
-  if (typeof imageSource !== "string") return imageSource;
+  if (!imageSource) {
+    return fallback;
+  }
+
+  if (typeof imageSource !== "string") {
+    return imageSource;
+  }
 
   const trimmed = imageSource.trim();
 
-  // If already a remote URL, absolute path, or base64 data URI
+  // Remote URL, absolute path, or data URI
   if (
     trimmed.startsWith("http://") ||
     trimmed.startsWith("https://") ||
@@ -65,7 +104,7 @@ export function resolveImage(imageSource, fallback = homeHero) {
     return trimmed;
   }
 
-  // If matches a registered local asset key
+  // Local asset
   if (LOCAL_IMAGES[trimmed]) {
     return LOCAL_IMAGES[trimmed];
   }
