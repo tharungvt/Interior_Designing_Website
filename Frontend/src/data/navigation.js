@@ -9,7 +9,7 @@ export const navigation = [
   { id: "home", label: "Home", href: "/" },
   { id: "about", label: "About Us", href: "/about" },
   { id: "services", label: "Services", href: "/services" },
-  { id: "projects", label: "Projects", href: "/#projects" },
+  { id: "projects", label: "Projects", href: "/projects" },
   { id: "gallery", label: "Gallery", href: "/gallery" },
   { id: "testimonials", label: "Testimonials", href: "/#testimonials" },
   { id: "blog", label: "Blog", href: "/blog" },
