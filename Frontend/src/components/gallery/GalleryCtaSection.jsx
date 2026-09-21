@@ -1,10 +1,5 @@
 import Button from "../Button";
 
-/**
- * GalleryCtaSection
- *
- * Recreates the consultation invitation card from the bottom of the Figma Gallery page.
- */
 export default function GalleryCtaSection({ cta }) {
   if (!cta) return null;
 

@@ -1,10 +1,3 @@
-/**
- * Gallery Page Content Configuration
- *
- * Dedicated data source for the Gallery page.
- * All image assets are imported directly from Frontend/src/assets/gallery/
- * to guarantee 100% reliable local bundling and distinct asset association.
- */
 
 // Gallery Grid Assets
 import minimalistPenthouse from "../assets/gallery/minimalist-penthouse.png";
@@ -205,7 +198,7 @@ export const galleryPageContent = {
     subtitle:
       "Inspired by what you see? Tell us about your space and our design team can help create something tailored to you.",
     primaryCta: {
-      label: "Get a Free Consultation →",
+      label: "Get a Free Consultation",
       href: "/contact",
     },
     secondaryCta: {

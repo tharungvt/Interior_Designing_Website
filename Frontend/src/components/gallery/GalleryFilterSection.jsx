@@ -1,12 +1,7 @@
 /**
  * GalleryFilterSection
  *
- * Implements a floating glassmorphism filter bar:
- * - Semi-transparent white frosted glass container with backdrop blur
- * - Subtly frosted active capsule with translucent styling (no black/dark fill)
- * - Clean, unboxed text categories with delicate light hover states
- * - Ultra-thin translucent separators between categories
- * - All categories arranged in a single horizontal row on desktop
+
  */
 export default function GalleryFilterSection({
   filters,
