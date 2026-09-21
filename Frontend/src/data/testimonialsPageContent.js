@@ -49,7 +49,7 @@ export const testimonialsPageContent = {
     stars: 5,
     eyebrow: "FEATURED CLIENT STORY",
     quote:
-      "The design process felt thoughtful from the beginning. Every detail was considered around how we actually live, and the final space feels completely our own. Their management of millwork and natural lighting transformed our entire home.",
+      "They asked how we actually live before making any big decisions. Now the house feels comfortable, personal, and much easier to live in every day.",
     badge: "Verified Project Client · Completed Turnkey Execution",
     image: testimonial01,
     projectImage: featuredTribeca,
@@ -64,7 +64,7 @@ export const testimonialsPageContent = {
       rating: "5.0",
       stars: 5,
       quote:
-        "From the first consultation to the final installation, everything felt considered and well coordinated. The kitchen worktop and concealed joinery are beautiful without compromising how we actually use the space every day.",
+        "We cook a lot, so we needed a kitchen that could handle real life, not just look good in photos. The storage works brilliantly and the worktop still feels special every time we use it.",
       image: testimonial02,
       initials: "PN",
     },
@@ -76,7 +76,7 @@ export const testimonialsPageContent = {
       rating: "5.0",
       stars: 5,
       quote:
-        "Our new executive headquarters balanced acoustic isolation with open collaboration. The studio delivered precisely within our operational timeframe while maintaining exceptional material craft.",
+        "The office finally works for both quiet concentration and team meetings. They kept us on schedule and made the space feel welcoming without making it look like a typical corporate office.",
       image: testimonial03,
       initials: "JV",
     },
@@ -88,7 +88,7 @@ export const testimonialsPageContent = {
       rating: "5.0",
       stars: 5,
       quote:
-        "They listened deeply to our lifestyle habits before proposing any finishes. The living room now captures morning natural light effortlessly, creating an enduring sense of calm.",
+        "They spent time understanding how we use the room before suggesting anything. The morning light is beautiful now, and the living room feels calm without being too precious.",
       image: testimonial04,
       initials: "CH",
     },
@@ -100,7 +100,7 @@ export const testimonialsPageContent = {
       rating: "5.0",
       stars: 5,
       quote:
-        "Opening a 90-cover dining venue in SoHo required strict acoustic dampening, custom atmospheric illumination, and resilient circulation routes. Interior Design Studio balanced high culinary standards with warm, tactile architectural poise.",
+        "Opening a 90-seat restaurant came with a very tight schedule and a lot of moving parts. They helped us make the room feel warm and lively while keeping it comfortable when the dining room is full.",
       image: testimonial05,
       initials: "MG",
     },
@@ -112,7 +112,7 @@ export const testimonialsPageContent = {
       rating: "5.0",
       stars: 5,
       quote:
-        "The custom upholstered headboard, circadian lighting integration, and concealed wardrobes made our master suite feel like an architectural sanctuary.",
+        "The new bedroom feels peaceful without losing any storage. We especially love the headboard and the softer lighting in the evening.",
       image: testimonial06,
       initials: "SL",
     },
@@ -124,7 +124,7 @@ export const testimonialsPageContent = {
       rating: "5.0",
       stars: 5,
       quote:
-        "Their ability to integrate natural stone floors with double height volume created seamless indoor outdoor living. Flawless site coordination.",
+        "The stone floor makes the house and terrace feel connected, which was exactly what we hoped for. The team also kept the work moving smoothly while we were living elsewhere.",
       image: testimonial07,
       initials: "DK",
     },
@@ -136,7 +136,7 @@ export const testimonialsPageContent = {
       rating: "5.0",
       stars: 5,
       quote:
-        "Customers immediately notice the tactile materials and custom display plinths. The spatial layout substantially improved customer dwell time and brand prestige.",
+        "Customers comment on the shop as soon as they walk in. The displays are easier to change, and people seem to spend more time exploring instead of heading straight back out.",
       image: testimonial08,
       initials: "AT",
     },
@@ -148,7 +148,7 @@ export const testimonialsPageContent = {
       rating: "5.0",
       stars: 5,
       quote:
-        "From architectural concept schematics to precision turnkey handover, their team operated with rigorous discipline and total transparent communication.",
+        "We always knew what was happening and what needed our decision next. The finished office feels polished and professional, but it is still comfortable for the team to use every day.",
       image: testimonial09,
       initials: "NW",
     },

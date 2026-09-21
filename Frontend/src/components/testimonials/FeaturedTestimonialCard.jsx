@@ -78,7 +78,7 @@ export default function FeaturedTestimonialCard({ featured }) {
             </div>
 
             {/* Quote */}
-            <blockquote className="font-editorial text-lg sm:text-xl lg:text-2xl text-[#17252C] font-normal leading-relaxed mb-4 sm:mb-5">
+            <blockquote className="font-testimonial-quote text-[20px] leading-[29px] text-[#17252C] font-medium mb-4 sm:mb-5">
               “{featured.quote}”
             </blockquote>
           </div>

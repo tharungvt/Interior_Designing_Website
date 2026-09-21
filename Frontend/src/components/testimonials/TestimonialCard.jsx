@@ -39,7 +39,7 @@ export default function TestimonialCard({ testimonial }) {
         <StarRating count={testimonial.stars || 5} ratingText={testimonial.rating || "5.0"} />
 
         {/* Testimonial Quote (Primary Content) */}
-        <p className="text-[15px] sm:text-base text-[#17252C] leading-relaxed font-sans mb-5 font-normal">
+        <p className="font-testimonial-quote text-[20px] leading-[29px] text-[#17252C] mb-5 font-medium">
           “{testimonial.quote}”
         </p>
       </div>
