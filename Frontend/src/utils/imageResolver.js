@@ -48,39 +48,6 @@ import specializedPlanning from "../assets/services/specialized-planning.png";
 import specializedRenovation from "../assets/services/specialized-renovation.png";
 import servicesCtaDesk from "../assets/services/cta-desk.png";
 
-// Projects page images
-import projectsHero from "../assets/projects/hero-living-room.png";
-import featuredTribeca from "../assets/projects/featured-tribeca.png";
-import beforeRenovation from "../assets/projects/before-renovation.jpg";
-import afterRenovation from "../assets/projects/after-renovation.png";
-import projectsCtaDesk from "../assets/projects/cta-desk.png";
-
-import gallery01 from "../assets/projects/gallery-01.png";
-import gallery02 from "../assets/projects/gallery-02.png";
-import gallery03 from "../assets/projects/gallery-03.png";
-import gallery04 from "../assets/projects/gallery-04.png";
-import gallery05 from "../assets/projects/gallery-05.png";
-import gallery06 from "../assets/projects/gallery-06.png";
-import gallery07 from "../assets/projects/gallery-07.png";
-import gallery08 from "../assets/projects/gallery-08.png";
-import gallery09 from "../assets/projects/gallery-09.png";
-import gallery10 from "../assets/projects/gallery-10.jpg";
-import gallery11 from "../assets/projects/gallery-11.png";
-import gallery12 from "../assets/projects/gallery-12.jpg";
-
-import projectApexSuites from "../assets/projects/project-apex-suites.jpg";
-import projectAuraHq from "../assets/projects/project-aura-hq.png";
-import projectBoardroom from "../assets/projects/project-boardroom.png";
-import projectBoutiqueRetail from "../assets/projects/project-boutique-retail.png";
-import projectCoastalPavilion from "../assets/projects/project-coastal-pavilion.png";
-import projectCulinaryAtelier from "../assets/projects/project-culinary-atelier.jpg";
-import projectDiningSanctuary from "../assets/projects/project-dining-sanctuary.png";
-import projectHighlinePenthouse from "../assets/projects/project-highline-penthouse.jpg";
-import projectOakwoodResidence from "../assets/projects/project-oakwood-residence.png";
-import projectTribecaLoft from "../assets/projects/project-tribeca-loft.png";
-import projectVillaSerena from "../assets/projects/project-villa-serena.png";
-import projectZenApartment from "../assets/projects/project-zen-apartment.png";
-
 /**
  * Registry of approved local assets.
  */
