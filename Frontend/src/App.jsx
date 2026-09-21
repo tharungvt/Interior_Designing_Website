@@ -11,6 +11,7 @@ import Projects from "./pages/Projects";
 import Gallery from "./pages/Gallery";
 import Testimonials from "./pages/Testimonials";
 import Blog from "./pages/Blog";
+import BlogArticle from "./pages/BlogArticle";
 import FAQ from "./pages/FAQ";
 import Contact from "./pages/Contact";
 
@@ -40,6 +41,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogArticle />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
