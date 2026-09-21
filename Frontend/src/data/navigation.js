@@ -11,7 +11,7 @@ export const navigation = [
   { id: "services", label: "Services", href: "/services" },
   { id: "projects", label: "Projects", href: "/projects" },
   { id: "gallery", label: "Gallery", href: "/gallery" },
-  { id: "testimonials", label: "Testimonials", href: "/#testimonials" },
+  { id: "testimonials", label: "Testimonials", href: "/testimonials" },
   { id: "blog", label: "Blog", href: "/blog" },
   { id: "faq", label: "FAQ", href: "/faq" },
   { id: "contact", label: "Contact Us", href: "/#contact" },
