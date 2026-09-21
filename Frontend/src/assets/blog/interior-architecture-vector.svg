@@ -1,0 +1,436 @@
+<svg
+  viewBox="0 0 400 320"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  preserveAspectRatio="xMidYMid slice"
+  role="img"
+  aria-label="Editorial vector illustration of a modern luxury interior with sofa, coffee table, and architectural window"
+>
+  <!-- Background Architectural Canvas -->
+  <rect width="400" height="320" fill="#EBF1EF" />
+
+  <!-- Ceiling to Floor Architectural Grid / Wall Paneling -->
+  <rect x="0" y="0" width="400" height="235" fill="#EEF4F2" />
+
+  <!-- Hardwood / Parquet Flooring Base -->
+  <rect x="0" y="235" width="400" height="85" fill="#DCE5E2" />
+  <line x1="0" y1="235" x2="400" y2="235" stroke="#C5D3D6" stroke-width="1.5" />
+
+  <!-- Subtle floor plank perspective lines -->
+  <line x1="45" y1="235" x2="15" y2="320" stroke="#CEDAD7" stroke-width="1" />
+  <line x1="120" y1="235" x2="100" y2="320" stroke="#CEDAD7" stroke-width="1" />
+  <line x1="200" y1="235" x2="190" y2="320" stroke="#CEDAD7" stroke-width="1" />
+  <line x1="280" y1="235" x2="285" y2="320" stroke="#CEDAD7" stroke-width="1" />
+  <line x1="355" y1="235" x2="375" y2="320" stroke="#CEDAD7" stroke-width="1" />
+
+  <!-- Tall Architectural Window -->
+  <g id="architectural-window">
+    <!-- Window aperture -->
+    <rect
+      x="235"
+      y="25"
+      width="135"
+      height="210"
+      rx="3"
+      fill="#F4F8F7"
+      stroke="#C1D1D4"
+      stroke-width="2"
+    />
+
+    <!-- Sky / Daylight -->
+    <rect x="237" y="27" width="131" height="206" fill="#F2F7F6" />
+
+    <!-- Window mullions / architectural frames -->
+    <line x1="302" y1="25" x2="302" y2="235" stroke="#C1D1D4" stroke-width="1.5" />
+    <line x1="235" y1="95" x2="370" y2="95" stroke="#C1D1D4" stroke-width="1.5" />
+    <line x1="235" y1="165" x2="370" y2="165" stroke="#C1D1D4" stroke-width="1.5" />
+
+    <!-- Exterior architectural greenery -->
+    <path
+      d="M345 235 C345 210 355 195 365 190 C368 205 369 220 370 235 Z"
+      fill="#D1DFDD"
+      opacity="0.75"
+    />
+    <path
+      d="M315 235 C318 200 332 185 348 180 C352 205 349 220 345 235 Z"
+      fill="#C4D7D4"
+      opacity="0.8"
+    />
+  </g>
+
+  <!-- Wall Moulding / Minimalist Gallery Framing -->
+  <g id="wall-moulding">
+    <rect
+      x="35"
+      y="45"
+      width="70"
+      height="95"
+      rx="1.5"
+      fill="none"
+      stroke="#D3E0E2"
+      stroke-width="1.2"
+    />
+
+    <rect
+      x="42"
+      y="52"
+      width="56"
+      height="81"
+      rx="1"
+      fill="#E6EFEB"
+      stroke="#D0DEDF"
+      stroke-width="1"
+    />
+
+    <!-- Minimalist modern art print -->
+    <circle cx="68" cy="85" r="16" fill="#3C7188" fill-opacity="0.25" />
+    <line
+      x1="52"
+      y1="110"
+      x2="88"
+      y2="75"
+      stroke="#17252C"
+      stroke-width="1.2"
+      stroke-linecap="round"
+    />
+    <line
+      x1="52"
+      y1="110"
+      x2="72"
+      y2="110"
+      stroke="#8DA8B3"
+      stroke-width="1.5"
+      stroke-linecap="round"
+    />
+  </g>
+
+  <!-- Arched Floor Lamp -->
+  <g id="floor-lamp">
+    <!-- Lamp Base -->
+    <ellipse cx="65" cy="245" rx="12" ry="3.5" fill="#17252C" />
+
+    <!-- Arc Stem -->
+    <path
+      d="M65 245 C65 120 100 55 180 55 C215 55 228 85 230 115"
+      fill="none"
+      stroke="#17252C"
+      stroke-width="2.2"
+      stroke-linecap="round"
+    />
+
+    <!-- Lamp Shade -->
+    <path
+      d="M218 122 L242 122 L236 112 L224 112 Z"
+      fill="#BFA07A"
+      stroke="#17252C"
+      stroke-width="1.2"
+      stroke-linejoin="round"
+    />
+
+    <!-- Light Glow Cone -->
+    <polygon
+      points="222,123 238,123 260,195 200,195"
+      fill="#F5EFE6"
+      fill-opacity="0.45"
+    />
+  </g>
+
+  <!-- Minimalist Area Rug -->
+  <ellipse
+    cx="185"
+    cy="275"
+    rx="115"
+    ry="32"
+    fill="#E2EAE7"
+    stroke="#CCD8D5"
+    stroke-width="1"
+  />
+
+  <!-- Modern Curved Sectional / Sofa -->
+  <g id="modern-sofa">
+    <!-- Soft shadow underneath sofa -->
+    <ellipse
+      cx="170"
+      cy="254"
+      rx="72"
+      ry="7"
+      fill="#BAC8C6"
+      fill-opacity="0.5"
+    />
+
+    <!-- Sofa Base / Wooden Frame -->
+    <rect x="98" y="235" width="144" height="6" rx="2" fill="#9B8068" />
+
+    <!-- Slim tapered furniture legs -->
+    <line
+      x1="108"
+      y1="241"
+      x2="105"
+      y2="252"
+      stroke="#17252C"
+      stroke-width="2.2"
+      stroke-linecap="round"
+    />
+    <line
+      x1="150"
+      y1="241"
+      x2="150"
+      y2="252"
+      stroke="#17252C"
+      stroke-width="2"
+      stroke-linecap="round"
+    />
+    <line
+      x1="190"
+      y1="241"
+      x2="190"
+      y2="252"
+      stroke="#17252C"
+      stroke-width="2"
+      stroke-linecap="round"
+    />
+    <line
+      x1="232"
+      y1="241"
+      x2="235"
+      y2="252"
+      stroke="#17252C"
+      stroke-width="2.2"
+      stroke-linecap="round"
+    />
+
+    <!-- Sofa Backrest Cushions -->
+    <path
+      d="M96 175 C96 165 106 158 120 158 L220 158 C234 158 244 165 244 175 L244 215 L96 215 Z"
+      fill="#17252C"
+    />
+
+    <!-- Backrest seam line -->
+    <line
+      x1="170"
+      y1="160"
+      x2="170"
+      y2="215"
+      stroke="#2D3F47"
+      stroke-width="1.5"
+    />
+
+    <!-- Sofa Seat Cushion -->
+    <rect
+      x="92"
+      y="205"
+      width="156"
+      height="32"
+      rx="7"
+      fill="#253842"
+      stroke="#17252C"
+      stroke-width="1"
+    />
+
+    <line
+      x1="170"
+      y1="206"
+      x2="170"
+      y2="236"
+      stroke="#17252C"
+      stroke-width="1.2"
+    />
+
+    <!-- Left Sofa Armrest -->
+    <rect
+      x="88"
+      y="185"
+      width="16"
+      height="48"
+      rx="6"
+      fill="#2A3E49"
+      stroke="#17252C"
+      stroke-width="1"
+    />
+
+    <!-- Right Sofa Armrest -->
+    <rect
+      x="236"
+      y="185"
+      width="16"
+      height="48"
+      rx="6"
+      fill="#2A3E49"
+      stroke="#17252C"
+      stroke-width="1"
+    />
+
+    <!-- Accent Throw Pillows -->
+    <path
+      d="M107 195 C107 186 114 182 122 184 L132 186 C138 188 141 195 139 203 L136 214 C134 220 127 222 120 220 L112 216 C107 212 107 203 107 195 Z"
+      fill="#3C7188"
+      stroke="#17252C"
+      stroke-width="1"
+    />
+
+    <!-- Warm Ochre / Oatmeal Lumbar Pillow -->
+    <rect
+      x="195"
+      y="196"
+      width="34"
+      height="20"
+      rx="4"
+      fill="#CBB69E"
+      stroke="#17252C"
+      stroke-width="1"
+    />
+  </g>
+
+  <!-- Low Architectural Coffee Table -->
+  <g id="coffee-table">
+    <!-- Table Shadow -->
+    <ellipse
+      cx="172"
+      cy="278"
+      rx="34"
+      ry="7"
+      fill="#B4C3C0"
+      fill-opacity="0.45"
+    />
+
+    <!-- Table Top -->
+    <ellipse
+      cx="172"
+      cy="265"
+      rx="36"
+      ry="12"
+      fill="#D5C4B0"
+      stroke="#9B846D"
+      stroke-width="1"
+    />
+
+    <!-- Table Base -->
+    <path
+      d="M158 268 L154 278 L190 278 L186 268 Z"
+      fill="#17252C"
+    />
+
+    <!-- Design objects -->
+    <rect
+      x="156"
+      y="260"
+      width="14"
+      height="4"
+      rx="1"
+      fill="#FFFFFF"
+      stroke="#8A9D9F"
+      stroke-width="0.8"
+    />
+
+    <ellipse
+      cx="180"
+      cy="261"
+      rx="5"
+      ry="2.5"
+      fill="#3C7188"
+    />
+  </g>
+
+  <!-- Indoor Potted Botanical -->
+  <g id="indoor-plant">
+    <!-- Planter Shadow -->
+    <ellipse
+      cx="320"
+      cy="268"
+      rx="18"
+      ry="4.5"
+      fill="#B2C2BF"
+      fill-opacity="0.5"
+    />
+
+    <!-- Fluted Minimalist Ceramic Pot -->
+    <path
+      d="M308 226 L332 226 L328 266 L312 266 Z"
+      fill="#FFFFFF"
+      stroke="#B5C6C9"
+      stroke-width="1.2"
+    />
+
+    <!-- Subtle planter fluting lines -->
+    <line
+      x1="316"
+      y1="228"
+      x2="315"
+      y2="264"
+      stroke="#E1EBE8"
+      stroke-width="1"
+    />
+    <line
+      x1="320"
+      y1="228"
+      x2="320"
+      y2="265"
+      stroke="#E1EBE8"
+      stroke-width="1"
+    />
+    <line
+      x1="324"
+      y1="228"
+      x2="325"
+      y2="264"
+      stroke="#E1EBE8"
+      stroke-width="1"
+    />
+
+    <!-- Botanical Stems -->
+    <path
+      d="M320 226 Q320 185 305 160"
+      stroke="#3C5C50"
+      stroke-width="2.2"
+      stroke-linecap="round"
+    />
+    <path
+      d="M320 226 Q322 170 338 145"
+      stroke="#3C5C50"
+      stroke-width="2"
+      stroke-linecap="round"
+    />
+    <path
+      d="M320 205 Q335 190 350 185"
+      stroke="#3C5C50"
+      stroke-width="1.8"
+      stroke-linecap="round"
+    />
+
+    <!-- Sculptural Organic Leaves -->
+    <path
+      d="M305 160 C290 152 284 168 296 174 C304 178 308 172 305 160 Z"
+      fill="#2F4F43"
+      stroke="#203830"
+      stroke-width="0.8"
+    />
+
+    <path
+      d="M338 145 C354 138 358 155 345 162 C338 166 335 156 338 145 Z"
+      fill="#3A5C50"
+      stroke="#203830"
+      stroke-width="0.8"
+    />
+
+    <path
+      d="M300 185 C285 180 282 195 294 200 C302 203 306 195 300 185 Z"
+      fill="#476E60"
+      stroke="#203830"
+      stroke-width="0.8"
+    />
+
+    <path
+      d="M350 185 C364 182 366 196 352 201 C345 204 343 194 350 185 Z"
+      fill="#36574B"
+      stroke="#203830"
+      stroke-width="0.8"
+    />
+
+    <path
+      d="M312 175 C310 162 325 162 322 175 C320 182 314 182 312 175 Z"
+      fill="#537A6C"
+      stroke="#203830"
+      stroke-width="0.8"
+    />
+  </g>
+</svg>
