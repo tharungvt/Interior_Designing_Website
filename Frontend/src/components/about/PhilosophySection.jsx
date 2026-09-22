@@ -20,7 +20,7 @@ function PhilosophySection({ content = aboutContent.philosophy }) {
 
   return (
     <section
-      className="py-12 md:py-16 border-b border-[#DCE5E7] bg-[#F1F5F4]"
+      className="py-12 md:py-16 border-b border-[#DCE5E7] bg-[#F1F5F4] scroll-mt-[72px]"
       data-purpose="design-philosophy-section"
       id="philosophy"
     >

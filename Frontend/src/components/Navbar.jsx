@@ -23,7 +23,7 @@ function Navbar() {
     href: "/contact",
   };
   const contactQuick = navData?.contactQuick || {
-    phone: "+1 (555) 123-4567",
+    phone: "+91 9876543210",
     email: "hello@interiordesignstudio.com",
   };
 

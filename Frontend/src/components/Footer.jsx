@@ -20,13 +20,13 @@ function Footer() {
   };
   const contact = footData?.contact || {
     title: "Contact Us",
-    phone: "+1 (555) 123-4567",
+    phone: "+91 9876543210",
     email: "hello@interiordesignstudio.com",
-    address: "123 Design Avenue, Suite 400, Design District, NY 10001",
-    workingHours: "Mon - Fri: 9:00 AM – 6:00 PM",
+    address: "[Office Address]",
+    workingHours: "[Working Hours]",
     whatsapp: {
       label: "Direct WhatsApp",
-      href: "https://wa.me/",
+      href: "https://wa.me/919876543210",
     },
   };
   const newsletter = footData?.newsletter || {
@@ -37,7 +37,7 @@ function Footer() {
     successMessage: "Thank you for subscribing!",
   };
   const legal = footData?.legal || {
-    copyright: `© ${new Date().getFullYear()} Interior Design Studio. All rights reserved.`,
+    copyright: "",
     links: [],
   };
 
@@ -189,7 +189,7 @@ function Footer() {
 
         {/* Copyright Sub-Footer Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-brand-slate gap-4">
-          <p className="break-words">{legal.copyright}</p>
+          {legal.copyright && <p className="break-words">{legal.copyright}</p>}
           <div className="flex items-center gap-6 flex-wrap">
             {legal.links?.map((link, idx) => (
               <a 

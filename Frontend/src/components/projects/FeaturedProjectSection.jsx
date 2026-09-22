@@ -10,7 +10,6 @@ export default function FeaturedProjectSection({
   const {
     title,
     categoryLabel,
-    year,
     area,
     image,
     summary,
@@ -43,7 +42,7 @@ export default function FeaturedProjectSection({
           {/* Bottom Info on Image */}
           <div className="absolute bottom-4 left-4 right-4 sm:bottom-5 sm:left-5 sm:right-5 z-10 text-white">
             <span className="text-[11px] sm:text-xs uppercase tracking-wider text-white/90 block mb-1 font-medium font-sans">
-              {year} • {area?.toUpperCase()}
+              {area?.toUpperCase()}
             </span>
             <h3 className="font-editorial text-xl sm:text-2xl font-bold tracking-tight text-white drop-shadow-sm">
               {title}
@@ -59,7 +58,7 @@ export default function FeaturedProjectSection({
                 {categoryLabel}
               </span>
               <span className="text-[11px] font-semibold text-brand-charcoal font-sans px-2.5 py-0.5 rounded bg-[#F1F5F4] border border-brand-border/70">
-                {year} • {area}
+                {area}
               </span>
             </div>
 

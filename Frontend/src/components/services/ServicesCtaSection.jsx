@@ -9,8 +9,8 @@ export default function ServicesCtaSection({ content }) {
     heading = "Let's Create a Space That Feels Like Yours",
     subtitle = "Book a complimentary consultation with our principal architects and discover how we can elevate your corporate environment or residential sanctuary.",
     description = subtitle,
-    primaryCta = { label: "Get a Free Consultation", href: "/#contact" },
-    secondaryCta = { label: "Request a Quote", href: "/#contact" },
+    primaryCta = { label: "Get a Free Consultation", href: "/contact" },
+    secondaryCta = { label: "Request a Quote", href: "/contact?type=quote" },
     image = "services/cta-desk.png",
     imageAlt = "Architectural Consultation Desk",
   } = content;
@@ -51,7 +51,7 @@ export default function ServicesCtaSection({ content }) {
               <div className="flex flex-wrap items-center gap-3">
                 {resolvedPrimaryCta?.label && (
                   <Link
-                    to={resolvedPrimaryCta.href || "/#contact"}
+                    to={resolvedPrimaryCta.href || "/contact"}
                     className="px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold tracking-wider bg-[#17252C] text-white hover:bg-[#3C7188] transition-colors duration-200 shadow-sm text-center flex items-center justify-center gap-2 group cursor-pointer"
                   >
                     <span>{resolvedPrimaryCta.label}</span>
@@ -63,7 +63,7 @@ export default function ServicesCtaSection({ content }) {
 
                 {resolvedSecondaryCta?.label && (
                   <Link
-                    to={resolvedSecondaryCta.href || "/#contact"}
+                    to={resolvedSecondaryCta.href || "/contact?type=quote"}
                     className="px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold tracking-wider bg-white border border-[#DCE5E7] text-[#17252C] hover:bg-[#F1F5F4] transition-colors duration-200 text-center shadow-xs cursor-pointer"
                   >
                     {resolvedSecondaryCta.label}

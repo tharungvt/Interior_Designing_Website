@@ -1,4 +1,5 @@
 import { resolveImage } from "../../utils/imageResolver";
+import { handleServicesSectionLink } from "../../utils/servicesNavigation";
 import Button from "../Button";
 
 export default function ServicesHeroSection({ content }) {
@@ -12,29 +13,6 @@ export default function ServicesHeroSection({ content }) {
     backgroundImage,
     quickLinks = [],
   } = content;
-
-  const scrollToSection = (e, href) => {
-    if (href?.startsWith("#")) {
-      e.preventDefault();
-      const targetId = href.slice(1);
-      const element = document.getElementById(targetId);
-      if (element) {
-        const headerEl =
-          element.querySelector("[data-anchor-target]") ||
-          element.querySelector("#residential-header") ||
-          element.querySelector("h2") ||
-          element;
-        const navbarHeight = 72;
-        const offset = 20;
-        const y =
-          headerEl.getBoundingClientRect().top +
-          window.pageYOffset -
-          (navbarHeight + offset);
-        window.scrollTo({ top: Math.max(0, y), behavior: "smooth" });
-        window.history.pushState(null, "", href);
-      }
-    }
-  };
 
   return (
     <section
@@ -100,7 +78,7 @@ export default function ServicesHeroSection({ content }) {
               <a
                 key={link.id}
                 href={link.href}
-                onClick={(e) => scrollToSection(e, link.href)}
+                onClick={(e) => handleServicesSectionLink(e, link.href)}
                 className="px-5 py-2 rounded-full text-xs font-semibold tracking-wider text-white hover:bg-white/20 transition-all cursor-pointer whitespace-nowrap"
               >
                 {link.label}

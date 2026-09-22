@@ -1,5 +1,5 @@
 import { useState, useCallback } from "react";
-import ctaDesk from "../../assets/cta-desk.png";
+import ctaDesk from "../../assets/testimonials/cta-desk.png";
 
 export default function ContactMap({ locationData }) {
   const [zoomLevel, setZoomLevel] = useState(1);

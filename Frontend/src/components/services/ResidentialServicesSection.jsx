@@ -1,4 +1,5 @@
 import { resolveImage } from "../../utils/imageResolver";
+import { handleServicesSectionLink } from "../../utils/servicesNavigation";
 import Button from "../Button";
 
 export default function ResidentialServicesSection({ content }) {
@@ -49,6 +50,7 @@ export default function ResidentialServicesSection({ content }) {
             <div className="shrink-0">
               <Button
                 href={headerLink.href}
+                onClick={(e) => handleServicesSectionLink(e, headerLink.href)}
                 label={headerLink.label}
                 variant="outline"
                 className="!text-xs !py-2.5 !px-5"
@@ -109,7 +111,7 @@ export default function ResidentialServicesSection({ content }) {
                   )}
 
                   <Button
-                    href={featured.cta?.href || "/#contact"}
+                    href={featured.cta?.href || "/contact"}
                     label={featured.cta?.label || "Enquire"}
                     variant="primary"
                     className="!text-xs !py-2.5 !px-5"
@@ -170,7 +172,7 @@ export default function ResidentialServicesSection({ content }) {
                   Scope Available
                 </span>
                 <Button
-                  href={service.cta?.href || "/#contact"}
+                  href={service.cta?.href || "/contact"}
                   label={service.cta?.label || "Enquire"}
                   variant="text-arrow"
                   ariaLabel={`Enquire about ${service.title}`}

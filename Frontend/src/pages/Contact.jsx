@@ -6,6 +6,7 @@ import ContactInfo from "../components/contact/ContactInfo";
 import ContactForm from "../components/contact/ContactForm";
 import ContactProcess from "../components/contact/ContactProcess";
 import ContactMap from "../components/contact/ContactMap";
+import ContactCTA from "../components/contact/ContactCTA";
 
 export default function Contact() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -53,6 +54,20 @@ export default function Contact() {
     [setSearchParams]
   );
 
+  const selectActionAndScroll = useCallback(
+    (newType) => {
+      handleTypeChange(newType);
+      setTimeout(() => {
+        const formEl = document.getElementById("contact-form-container");
+        if (formEl) {
+          const y = formEl.getBoundingClientRect().top + window.pageYOffset - 90;
+          window.scrollTo({ top: Math.max(0, y), behavior: "smooth" });
+        }
+      }, 100);
+    },
+    [handleTypeChange]
+  );
+
   return (
     <main
       className="min-h-screen bg-[#F1F5F4] text-[#17252C] selection:bg-[#17252C] selection:text-white"
@@ -66,7 +81,10 @@ export default function Contact() {
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           {/* Architectural Hero Header */}
-          <ContactHero content={contactPageContent.hero} />
+          <ContactHero
+            content={contactPageContent.hero}
+            onSelectAction={selectActionAndScroll}
+          />
 
           {/* 2-Column Grid: Studio Inquiries + Form */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
@@ -92,6 +110,12 @@ export default function Contact() {
 
       {/* 3. What Happens Next: Editorial 4-Step Process */}
       <ContactProcess processSteps={contactPageContent.processSteps} />
+
+      {/* 4. Final Contact Action */}
+      <ContactCTA
+        ctaData={contactPageContent.finalCta}
+        onSelectAction={selectActionAndScroll}
+      />
     </main>
   );
 }

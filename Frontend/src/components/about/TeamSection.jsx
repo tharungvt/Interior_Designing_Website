@@ -8,7 +8,7 @@ function TeamSection({ content = aboutContent.team }) {
 
   return (
     <section
-      className="border-b border-[#DCE5E7] bg-[#F3F7F6] overflow-hidden py-12 md:py-16"
+      className="border-b border-[#DCE5E7] bg-[#F3F7F6] overflow-hidden py-12 md:py-16 scroll-mt-[72px]"
       data-purpose="team-section"
       id="team"
     >

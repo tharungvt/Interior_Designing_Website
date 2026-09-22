@@ -1,4 +1,6 @@
-export default function ContactHero({ content }) {
+import Button from "../Button";
+
+export default function ContactHero({ content, onSelectAction }) {
   if (!content) return null;
 
   return (
@@ -22,6 +24,27 @@ export default function ContactHero({ content }) {
       <p className="text-xs sm:text-sm text-[#4A5F68] font-normal leading-relaxed max-w-2xl font-sans">
         {content.description}
       </p>
+
+      {(content.primaryAction || content.secondaryAction) && (
+        <div className="flex flex-wrap items-center gap-3 mt-5">
+          {content.primaryAction && (
+            <Button
+              href={content.primaryAction.type === "quote" ? "/contact?type=quote" : "/contact?type=consultation"}
+              label={content.primaryAction.label}
+              variant="primary"
+              onClick={() => onSelectAction?.(content.primaryAction.type)}
+            />
+          )}
+          {content.secondaryAction && (
+            <Button
+              href={content.secondaryAction.type === "quote" ? "/contact?type=quote" : "/contact?type=consultation"}
+              label={content.secondaryAction.label}
+              variant="secondary"
+              onClick={() => onSelectAction?.(content.secondaryAction.type)}
+            />
+          )}
+        </div>
+      )}
     </div>
   );
 }

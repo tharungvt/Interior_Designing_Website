@@ -20,7 +20,7 @@ function ExperienceSection({ content = aboutContent.experience }) {
 
   return (
     <section
-      className="py-12 md:py-16 border-b border-[#DCE5E7] bg-[#F8FAF9]"
+      className="py-12 md:py-16 border-b border-[#DCE5E7] bg-[#F8FAF9] scroll-mt-[72px]"
       data-purpose="experience-narrative-section"
       id="experience"
     >

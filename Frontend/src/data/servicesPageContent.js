@@ -13,11 +13,11 @@ export const servicesPageContent = {
       "Thoughtfully designed interior solutions for residential, commercial, and specialized spaces, crafted with precision and elegance.",
     primaryCta: {
       label: "Get a Free Consultation",
-      href: "/#contact",
+      href: "/contact",
     },
     secondaryCta: {
       label: "View Our Projects",
-      href: "/#projects",
+      href: "/projects",
     },
     backgroundImage: "services/hero-services.png",
     quickLinks: [
@@ -56,7 +56,7 @@ export const servicesPageContent = {
       },
       cta: {
         label: "Enquire About Full Home Design",
-        href: "/#contact",
+        href: "/contact",
       },
     },
     services: [
@@ -68,7 +68,7 @@ export const servicesPageContent = {
           "Smart space-maximizing layouts engineered with customized built-ins, clean architectural lines, and tailored lighting for high-rise city living.",
         tags: ["Urban Condos", "Compact Flow"],
         image: "services/residential-apartment.png",
-        cta: { label: "Enquire", href: "/#contact" },
+        cta: { label: "Enquire", href: "/contact" },
       },
       {
         id: "res-villa",
@@ -78,7 +78,7 @@ export const servicesPageContent = {
           "Expansive scale residences with seamless transitions between indoor living and landscaped terraces, featuring monolithic stone details.",
         tags: ["Estates & Villas", "Grand Volume"],
         image: "services/residential-villa.png",
-        cta: { label: "Enquire", href: "/#contact" },
+        cta: { label: "Enquire", href: "/contact" },
       },
       {
         id: "res-bedroom",
@@ -88,7 +88,7 @@ export const servicesPageContent = {
           "Restorative sleep sanctuaries balancing tactile acoustics, integrated bedside joinery, circadian illumination, and concealed wardrobes.",
         tags: ["Master Suites", "Acoustic Comfort"],
         image: "services/residential-bedroom.png",
-        cta: { label: "Enquire", href: "/#contact" },
+        cta: { label: "Enquire", href: "/contact" },
       },
       {
         id: "res-living-room",
@@ -98,7 +98,7 @@ export const servicesPageContent = {
           "Artfully organized social spaces balancing tactile textiles, sculptured hearth surrounds, natural illumination, and conversational warmth.",
         tags: ["Salon & Lounge", "Custom Upholstery"],
         image: "services/residential-living-room.png",
-        cta: { label: "Enquire", href: "/#contact" },
+        cta: { label: "Enquire", href: "/contact" },
       },
       {
         id: "res-kitchen",
@@ -108,7 +108,7 @@ export const servicesPageContent = {
           "Ergonomic culinary work islands, seamless concealed pantries, quartzite slab worktops, and engineered German hardware precision.",
         tags: ["Culinary Design", "Quartzite Slabs"],
         image: "services/residential-kitchen.jpg",
-        cta: { label: "Enquire", href: "/#contact" },
+        cta: { label: "Enquire", href: "/contact" },
       },
       {
         id: "res-bathroom",
@@ -118,7 +118,7 @@ export const servicesPageContent = {
           "Spa-inspired retreats featuring monolithic stone vanities, frameless walk-in rain showers, heated floors, and warm recessed wall reveals.",
         tags: ["Spa Sanctuary", "Monolithic Stone"],
         image: "services/residential-bathroom.png",
-        cta: { label: "Enquire", href: "/#contact" },
+        cta: { label: "Enquire", href: "/contact" },
       },
     ],
   },
@@ -128,7 +128,7 @@ export const servicesPageContent = {
     heading: "Selected Residential Case Studies",
     viewAllLink: {
       label: "All Projects",
-      href: "/#projects",
+      href: "/projects",
     },
     items: [
       {
@@ -137,7 +137,7 @@ export const servicesPageContent = {
         title: "The Tribeca Loft",
         description: "4,200 sq.ft complete design-build and bespoke joinery package.",
         image: "services/case-study-tribeca.png",
-        link: { label: "View Project", href: "/#projects" },
+        link: { label: "View Project", href: "/projects" },
       },
       {
         id: "case-oakwood",
@@ -146,7 +146,7 @@ export const servicesPageContent = {
         description:
           "Holistic multi-level residence with continuous indoor-outdoor courtyard integration.",
         image: "services/case-study-oakwood.png",
-        link: { label: "View Project", href: "/#projects" },
+        link: { label: "View Project", href: "/projects" },
       },
     ],
   },
@@ -159,7 +159,7 @@ export const servicesPageContent = {
       "Purpose-driven environments designed to support brand identity, productivity, customer experience and business growth.",
     headerLink: {
       label: "Explore Commercial",
-      href: "/#projects",
+      href: "#commercial",
     },
     featured: {
       badge: "COMMERCIAL FLAGSHIP",
@@ -181,7 +181,7 @@ export const servicesPageContent = {
       },
       cta: {
         label: "Enquire About Office Design",
-        href: "/#contact",
+        href: "/contact",
       },
     },
     services: [
@@ -193,7 +193,7 @@ export const servicesPageContent = {
           "Focused private offices, tech hubs, and collaborative war-rooms calibrated for team productivity and executive presence.",
         tags: ["Private Suites", "Acoustic Enclosures"],
         image: "services/commercial-workspaces.jpg",
-        cta: { label: "Enquire", href: "/#contact" },
+        cta: { label: "Enquire", href: "/contact" },
       },
       {
         id: "comm-retail",
@@ -203,7 +203,7 @@ export const servicesPageContent = {
           "Boutique environments converting retail square footage into immersive brand journeys that elevate average order value and foot-traffic dwell time.",
         tags: ["Flagship Retail", "Visual Merchandising"],
         image: "services/commercial-retail.png",
-        cta: { label: "Enquire", href: "/#contact" },
+        cta: { label: "Enquire", href: "/contact" },
       },
       {
         id: "comm-dining",
@@ -213,7 +213,7 @@ export const servicesPageContent = {
           "Atmospheric gastronomy venues balancing intimate acoustic isolation, theatrical bar focal points, and resilient service circulation pathways.",
         tags: ["Fine Dining", "Atmospheric Bars"],
         image: "services/commercial-dining.png",
-        cta: { label: "Enquire", href: "/#contact" },
+        cta: { label: "Enquire", href: "/contact" },
       },
       {
         id: "comm-hospitality",
@@ -223,7 +223,7 @@ export const servicesPageContent = {
           "Luxury hospitality spaces spanning grand reception foyers to bespoke turnkey suites tailored for unforgettable guest visits.",
         tags: ["Lobbies & Lounges", "Turnkey Suites"],
         image: "services/commercial-hospitality.png",
-        cta: { label: "Enquire", href: "/#contact" },
+        cta: { label: "Enquire", href: "/contact" },
       },
       {
         id: "comm-boardrooms",
@@ -233,7 +233,7 @@ export const servicesPageContent = {
           "State-of-the-art telepresence conference rooms, executive lounges, and private partner suites equipped with seamless hidden connectivity.",
         tags: ["Telepresence", "Executive Suites"],
         image: "services/commercial-boardrooms.png",
-        cta: { label: "Enquire", href: "/#contact" },
+        cta: { label: "Enquire", href: "/contact" },
       },
     ],
   },
@@ -251,7 +251,7 @@ export const servicesPageContent = {
         description:
           "Precision German fittings, antibacterial surfaces, integrated pull-outs, and bespoke stone worktops.",
         image: "services/specialized-kitchen.jpg",
-        cta: { label: "Enquire", href: "/#contact" },
+        cta: { label: "Enquire", href: "/contact" },
       },
       {
         index: "02",
@@ -259,7 +259,7 @@ export const servicesPageContent = {
         description:
           "Custom walk-in dressing suites, smoked glass door wardrobes, leather drawer insets, and sensor illumination.",
         image: "services/specialized-wardrobe.png",
-        cta: { label: "Enquire", href: "/#contact" },
+        cta: { label: "Enquire", href: "/contact" },
       },
       {
         index: "03",
@@ -267,7 +267,7 @@ export const servicesPageContent = {
         description:
           "One-of-one custom furniture created in tandem with local master joiners, solid walnut dining tables, and seating.",
         image: "services/specialized-furniture.jpg",
-        cta: { label: "Enquire", href: "/#contact" },
+        cta: { label: "Enquire", href: "/contact" },
       },
       {
         index: "04",
@@ -275,7 +275,7 @@ export const servicesPageContent = {
         description:
           "Refined ceiling planes with hidden perimeter AC slots, knife-edge shadow reveals, and acoustic baffle integration.",
         image: "services/specialized-ceiling.jpg",
-        cta: { label: "Enquire", href: "/#contact" },
+        cta: { label: "Enquire", href: "/contact" },
       },
       {
         index: "05",
@@ -283,7 +283,7 @@ export const servicesPageContent = {
         description:
           "Multi-tiered architectural illumination plans calibrating daylight penetration, art accenting, and circadian tuning.",
         image: "services/specialized-lighting.png",
-        cta: { label: "Enquire", href: "/#contact" },
+        cta: { label: "Enquire", href: "/contact" },
       },
       {
         index: "06",
@@ -291,7 +291,7 @@ export const servicesPageContent = {
         description:
           "Bookmatched Italian marble slabs, honed travertines, seamless microcement, and European wide-plank French oak.",
         image: "services/specialized-flooring.png",
-        cta: { label: "Enquire", href: "/#contact" },
+        cta: { label: "Enquire", href: "/contact" },
       },
       {
         index: "07",
@@ -299,7 +299,7 @@ export const servicesPageContent = {
         description:
           "Artisanal Roman clay, natural limewash coats, breathable mineral plasters, and subtle tactile finishes.",
         image: "services/specialized-textures.png",
-        cta: { label: "Enquire", href: "/#contact" },
+        cta: { label: "Enquire", href: "/contact" },
       },
       {
         index: "08",
@@ -307,7 +307,7 @@ export const servicesPageContent = {
         description:
           "Rigorous 2D/3D programmatic zoning, user circulation analysis, view corridor optimization, and natural ventilation modeling.",
         image: "services/specialized-planning.png",
-        cta: { label: "Enquire", href: "/#contact" },
+        cta: { label: "Enquire", href: "/contact" },
       },
       {
         index: "09",
@@ -315,7 +315,7 @@ export const servicesPageContent = {
         description:
           "Full structural envelope modernizations, internal wall reconfigurations, MEP infrastructure overhauls, and historic preservation.",
         image: "services/specialized-renovation.png",
-        cta: { label: "Enquire", href: "/#contact" },
+        cta: { label: "Enquire", href: "/contact" },
       },
     ],
   },
@@ -327,11 +327,11 @@ export const servicesPageContent = {
       "Book a complimentary consultation with our principal architects and discover how we can elevate your corporate environment or residential sanctuary.",
     primaryCta: {
       label: "Get a Free Consultation",
-      href: "/#contact",
+      href: "/contact",
     },
     secondaryCta: {
       label: "Request a Quote",
-      href: "/#contact",
+      href: "/contact?type=quote",
     },
     image: "services/cta-desk.png",
   },

@@ -181,7 +181,7 @@ export const aboutContent = {
     },
     ctaSecondary: {
       label: "Request a Quote",
-      href: "/contact",
+      href: "/contact?type=quote",
     },
     image: "cta-desk.png",
     imageAlt:

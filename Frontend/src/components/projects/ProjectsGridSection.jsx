@@ -94,7 +94,7 @@ export default function ProjectsGridSection({
                 {/* Bottom Overlay Info */}
                 <div className="absolute bottom-4 left-4 right-4 z-10 text-white">
                   <span className="text-[11px] font-medium text-white/85 block mb-0.5 font-sans">
-                    {project.year} • {project.area}
+                    {project.area}
                   </span>
                   <h4 className="font-editorial text-xl sm:text-2xl font-bold tracking-tight text-white drop-shadow-sm">
                     {project.title}
@@ -145,57 +145,58 @@ export default function ProjectsGridSection({
           onClick={() => handleSelect(null)}
         >
           <div
-            className="bg-white rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto border border-brand-border shadow-2xl p-6 sm:p-8"
+            className="bg-white rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-hidden border border-brand-border shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Header */}
-            <div className="flex items-start justify-between gap-4 mb-4">
-              <div>
-                <span className="text-[11px] font-semibold text-brand-mineral uppercase tracking-wider block font-sans">
-                  {activeSelected.categoryLabel} • {activeSelected.year}
-                </span>
-                <h3 className="font-editorial text-2xl sm:text-3xl font-bold text-brand-charcoal mt-1">
-                  {activeSelected.title}
-                </h3>
-                <p className="text-xs text-brand-slate font-sans mt-0.5">
-                  {activeSelected.year} • {activeSelected.area}
-                </p>
+            <div className="max-h-[90vh] overflow-y-auto p-6 sm:p-8 [scrollbar-gutter:stable]">
+              {/* Header */}
+              <div className="flex items-start justify-between gap-4 mb-4">
+                <div>
+                  <span className="text-[11px] font-semibold text-brand-mineral uppercase tracking-wider block font-sans">
+                    {activeSelected.categoryLabel}
+                  </span>
+                  <h3 className="font-editorial text-2xl sm:text-3xl font-bold text-brand-charcoal mt-1">
+                    {activeSelected.title}
+                  </h3>
+                  <p className="text-xs text-brand-slate font-sans mt-0.5">
+                    {activeSelected.area}
+                  </p>
+                </div>
+
+                <button
+                  type="button"
+                  onClick={() => handleSelect(null)}
+                  aria-label="Close project modal"
+                  className="w-8 h-8 rounded-full bg-brand-surface hover:bg-brand-stone flex items-center justify-center text-brand-charcoal transition-colors cursor-pointer shrink-0"
+                >
+                  <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
               </div>
 
-              <button
-                type="button"
-                onClick={() => handleSelect(null)}
-                aria-label="Close project modal"
-                className="w-8 h-8 rounded-full bg-brand-surface hover:bg-brand-stone flex items-center justify-center text-brand-charcoal transition-colors cursor-pointer shrink-0"
-              >
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
-            </div>
+              {/* Modal Image */}
+              <div className="w-fit max-w-full mx-auto mb-6 max-h-[75vh] flex items-center justify-center">
+                <img
+                  src={resolveImage(activeSelected.image)}
+                  alt={activeSelected.title}
+                  className="max-w-full max-h-[75vh] w-auto h-auto object-contain rounded-none border-0 outline-none shadow-none ring-0"
+                />
+              </div>
 
-            {/* Modal Image */}
-            <div className="rounded-2xl overflow-hidden mb-6 aspect-[16/10] bg-brand-surface">
-              <img
-                src={resolveImage(activeSelected.image)}
-                alt={activeSelected.title}
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            {/* Modal Details */}
-            <div className="space-y-4 text-sm text-brand-mutedcharcoal leading-relaxed font-sans mb-6">
-              <p>{activeSelected.summary}</p>
+              {/* Modal Details */}
+              <div className="space-y-4 text-sm text-brand-mutedcharcoal leading-relaxed font-sans mb-6">
+                <p>{activeSelected.summary}</p>
 
               {activeSelected.materials && activeSelected.materials.length > 0 && (
                 <div>
@@ -223,24 +224,25 @@ export default function ProjectsGridSection({
                   {activeSelected.scope}
                 </div>
               )}
-            </div>
+              </div>
 
-            {/* Actions */}
-            <div className="flex items-center justify-end gap-3 pt-4 border-t border-brand-border">
-              <button
-                type="button"
-                onClick={() => handleSelect(null)}
-                className="px-5 py-2.5 rounded-full border border-brand-border text-xs font-semibold text-brand-mutedcharcoal hover:bg-brand-surface transition-colors cursor-pointer"
-              >
-                Close
-              </button>
-              <Button
-                id="modal-inquire-cta"
-                href="/contact"
-                label="Inquire About Similar Project"
-                variant="primary"
-                className="text-xs px-6 py-2.5"
-              />
+              {/* Actions */}
+              <div className="flex items-center justify-end gap-3 pt-4 border-t border-brand-border">
+                <button
+                  type="button"
+                  onClick={() => handleSelect(null)}
+                  className="px-5 py-2.5 rounded-full border border-brand-border text-xs font-semibold text-brand-mutedcharcoal hover:bg-brand-surface transition-colors cursor-pointer"
+                >
+                  Close
+                </button>
+                <Button
+                  id="modal-inquire-cta"
+                  href="/contact"
+                  label="Inquire About Similar Project"
+                  variant="primary"
+                  className="text-xs px-6 py-2.5"
+                />
+              </div>
             </div>
           </div>
         </div>

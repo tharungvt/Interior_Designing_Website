@@ -93,11 +93,11 @@ export default function ProjectGallerySection({ content }) {
             className="bg-white rounded-3xl max-w-4xl w-full overflow-hidden border border-brand-border shadow-2xl relative"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="relative aspect-[16/10] bg-black">
+            <div className="relative w-fit max-w-full max-h-[75vh] mx-auto flex items-center justify-center">
               <img
                 src={resolveImage(activeVignette.image)}
                 alt={activeVignette.title}
-                className="w-full h-full object-contain"
+                className="max-w-full max-h-[75vh] w-auto h-auto object-contain"
               />
               <button
                 type="button"

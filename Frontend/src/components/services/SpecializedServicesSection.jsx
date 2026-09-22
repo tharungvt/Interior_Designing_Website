@@ -77,7 +77,7 @@ export default function SpecializedServicesSection({ content }) {
                   Bespoke Commission
                 </span>
                 <Button
-                  href={item.cta?.href || "/#contact"}
+                  href={item.cta?.href || "/contact"}
                   label="Enquire"
                   variant="text-arrow"
                   ariaLabel={`Enquire about ${item.title}`}

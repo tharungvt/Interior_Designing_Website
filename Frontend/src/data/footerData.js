@@ -48,13 +48,13 @@ export const footerData = {
   },
   contact: {
     title: "Contact Us",
-    phone: "+1 (555) 123-4567",
+    phone: "+91 9876543210",
     email: "hello@interiordesignstudio.com",
-    address: "123 Design Avenue, Suite 400, Design District, NY 10001",
-    workingHours: "Mon - Fri: 9:00 AM – 6:00 PM",
+    address: "[Office Address]",
+    workingHours: "[Working Hours]",
     whatsapp: {
       label: "Direct WhatsApp",
-      href: "https://wa.me/",
+      href: "https://wa.me/919876543210",
     },
   },
   newsletter: {
@@ -65,11 +65,7 @@ export const footerData = {
     successMessage: "Thank you for subscribing!",
   },
   legal: {
-    copyright: "© 2025 Interior Design Studio. All rights reserved.",
-    links: [
-      { id: "privacy", label: "Privacy Policy", href: "#privacy" },
-      { id: "terms", label: "Terms of Service", href: "#terms" },
-      { id: "cookie", label: "Cookie Policy", href: "#cookie" },
-    ],
+    copyright: "",
+    links: [],
   },
 };

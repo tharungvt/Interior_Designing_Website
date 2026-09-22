@@ -14,7 +14,7 @@ export const navigation = [
   { id: "testimonials", label: "Testimonials", href: "/testimonials" },
   { id: "blog", label: "Blog", href: "/blog" },
   { id: "faq", label: "FAQ", href: "/faq" },
-  { id: "contact", label: "Contact Us", href: "/#contact" },
+  { id: "contact", label: "Contact Us", href: "/contact" },
 ];
 
 export const navigationData = {
@@ -26,10 +26,10 @@ export const navigationData = {
   navItems: navigation,
   cta: {
     label: "Get a Free Consultation",
-    href: "/#contact",
+    href: "/contact?type=consultation",
   },
   contactQuick: {
-    phone: "+1 (555) 123-4567",
+    phone: "+91 9876543210",
     email: "hello@interiordesignstudio.com",
   },
 };
