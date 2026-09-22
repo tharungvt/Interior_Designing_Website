@@ -29,11 +29,11 @@ export default function FAQCategoryFilter({
                 onClick={() => onSelectCategory(cat.id)}
                 className={`relative px-3 sm:px-4 py-1.5 text-xs tracking-wide cursor-pointer whitespace-nowrap bg-transparent group select-none transition-all duration-200 ${
                   isActive
-                    ? "text-[#17252C] font-bold opacity-100"
+                    ? "text-[#17252C] font-medium opacity-100"
                     : "text-[#4A5F68] font-medium opacity-80 hover:opacity-100 hover:text-[#17252C]"
                 }`}
               >
-                <span className="transition-opacity duration-200">{cat.label}</span>
+                <span className="text-[13px] font-medium transition-opacity duration-200">{cat.label}</span>
 
                 {/* Subtle underline indicator with smooth vertical shift & opacity change, zero fill color */}
                 <span

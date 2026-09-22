@@ -26,40 +26,40 @@ export default function FAQAccordion({
           <div className="space-y-4 sm:space-y-5">
             {/* Small Label */}
             {editorialContent.badge && (
-              <span className="text-[11px] sm:text-xs font-semibold uppercase tracking-[0.24em] text-[#3C7188] block">
+              <span className="text-[11px] font-medium uppercase tracking-[0.18em] text-[#3C7188] block">
                 {editorialContent.badge}
               </span>
             )}
 
             {/* Large Serif Heading */}
-            <h2 className="font-editorial text-2xl sm:text-3xl lg:text-[34px] font-bold text-[#17252C] tracking-tight leading-[1.18]">
+            <h2 className="font-editorial text-[30px] sm:text-[36px] lg:text-[42px] font-medium text-[#17252C] tracking-[-0.015em] leading-[1.1]">
               {editorialContent.heading}
             </h2>
 
             {/* Supporting Explanation */}
-            <p className="text-xs sm:text-sm text-[#4A5F68] font-normal leading-relaxed max-w-md font-sans">
+            <p className="text-[15px] sm:text-base text-[#4A5F68] font-normal leading-[1.55] sm:leading-[1.6] max-w-[520px] font-sans">
               {editorialContent.description}
             </p>
 
             {/* Redesigned Left Information Block: Clean, architectural, subtle background treatment */}
             {guidance && (
               <div className="bg-[#EBF1EF]/70 border border-[#DCE5E7] rounded-xl p-5 sm:p-6 transition-colors">
-                <span className="text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.22em] text-[#3C7188] mb-1.5 block">
+                <span className="text-[11px] font-medium uppercase tracking-[0.18em] text-[#3C7188] mb-1.5 block">
                   {guidance.eyebrow || "FAQ"}
                 </span>
 
-                <h3 className="font-editorial text-base sm:text-lg font-bold text-[#17252C] tracking-tight leading-snug mb-2">
+                <h3 className="font-editorial text-[20px] sm:text-[22px] font-medium text-[#17252C] tracking-[-0.01em] leading-[1.25] mb-2">
                   {guidance.title}
                 </h3>
 
-                <p className="text-xs sm:text-[13px] text-[#4A5F68] font-normal leading-relaxed mb-4 font-sans">
+                <p className="text-[15px] text-[#4A5F68] font-normal leading-[1.6] mb-4 font-sans">
                   {guidance.text}
                 </p>
 
                 <div className="pt-3 border-t border-[#DCE5E7]/80">
                   <Link
                     to={guidance.ctaHref || "/contact"}
-                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#17252C] hover:text-[#3C7188] transition-colors group"
+                    className="inline-flex items-center gap-1.5 text-[14px] font-medium text-[#17252C] hover:text-[#3C7188] transition-colors group"
                   >
                     <span>{guidance.ctaText || "Need more information?"}</span>
                     <span

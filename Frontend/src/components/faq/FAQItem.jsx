@@ -28,7 +28,7 @@ export default function FAQItem({
         <div className="flex items-start gap-2.5 sm:gap-3.5 flex-1 min-w-0">
           {/* Dynamically formatted number (01, 02, etc.) */}
           <span
-            className="text-[11px] sm:text-xs font-semibold font-mono tracking-wider text-[#3C7188] pt-0.5 shrink-0 select-none w-5"
+            className="text-[12px] font-medium font-sans tracking-[0.04em] text-[#5F747D] pt-0.5 shrink-0 select-none w-5"
             aria-hidden="true"
           >
             {formattedNumber}
@@ -36,13 +36,13 @@ export default function FAQItem({
 
           <div className="flex-1 min-w-0">
             {/* Category label / topic tag directly above question */}
-            <span className="text-[9.5px] sm:text-[10px] font-semibold uppercase tracking-[0.2em] text-[#5F747D] block mb-0.5 leading-none">
+            <span className="text-[11px] font-medium uppercase tracking-[0.16em] text-[#5F747D] block mb-0.5 leading-none">
               {item.topic || item.category}
             </span>
 
             {/* Question */}
             <h3
-              className={`font-editorial text-sm sm:text-base font-bold tracking-tight transition-colors leading-snug ${
+              className={`font-editorial text-[16px] sm:text-[17px] font-medium tracking-[-0.005em] transition-colors leading-[1.4] sm:leading-[1.35] ${
                 isOpen
                   ? "text-[#3C7188]"
                   : "text-[#17252C] group-hover:text-[#3C7188]"
@@ -78,7 +78,7 @@ export default function FAQItem({
         }`}
       >
         <div className="overflow-hidden pl-7 sm:pl-9 pr-3 sm:pr-5">
-          <p className="text-xs sm:text-[13px] text-[#4A5F68] font-normal leading-relaxed font-sans border-l-2 border-[#3C7188]/40 pl-2.5 sm:pl-3">
+          <p className="text-[14px] sm:text-[15px] text-[#4A5F68] font-normal leading-[1.6] sm:leading-[1.65] max-w-[600px] font-sans border-l-2 border-[#3C7188]/40 pl-2.5 sm:pl-3">
             {item.answer}
           </p>
         </div>

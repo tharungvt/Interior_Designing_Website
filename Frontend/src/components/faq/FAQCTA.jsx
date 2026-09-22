@@ -15,7 +15,7 @@ export default function FAQCTA({ cta }) {
           {cta.eyebrow && (
             <div className="flex items-center justify-center gap-2.5 mb-2.5">
               <span className="w-6 h-px bg-[#3C7188]" aria-hidden="true" />
-              <span className="text-[11px] sm:text-xs font-semibold uppercase tracking-[0.26em] text-[#3C7188]">
+              <span className="text-[11px] font-medium uppercase tracking-[0.18em] text-[#3C7188]">
                 {cta.eyebrow}
               </span>
               <span className="w-6 h-px bg-[#3C7188]" aria-hidden="true" />
@@ -23,13 +23,13 @@ export default function FAQCTA({ cta }) {
           )}
 
           {/* Heading */}
-          <h2 className="font-editorial text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-[#17252C] max-w-3xl leading-[1.15] mb-2.5">
+          <h2 className="font-editorial text-[26px] sm:text-3xl lg:text-[32px] font-medium tracking-[-0.01em] text-[#17252C] max-w-3xl leading-[1.15] mb-2.5">
             {cta.title}
           </h2>
 
           {/* Subtitle Description */}
           {cta.description && (
-            <p className="text-xs sm:text-sm md:text-base text-[#4A5F68] max-w-2xl leading-relaxed mb-6 font-sans">
+            <p className="text-[14px] sm:text-[15px] text-[#4A5F68] max-w-2xl leading-[1.5] mb-6 font-sans">
               {cta.description}
             </p>
           )}
@@ -42,7 +42,7 @@ export default function FAQCTA({ cta }) {
                 variant="primary"
                 label={cta.primaryCta.label}
                 showArrow={true}
-                className="w-full sm:w-auto px-8 py-3.5 text-xs sm:text-sm font-semibold"
+                className="w-full sm:w-auto px-8 py-3.5 text-[13px] sm:text-[14px] font-medium"
               />
             )}
             {cta.secondaryCta && (
@@ -51,7 +51,7 @@ export default function FAQCTA({ cta }) {
                 variant="secondary"
                 label={cta.secondaryCta.label}
                 showArrow={true}
-                className="w-full sm:w-auto px-8 py-3.5 text-xs sm:text-sm font-semibold bg-white text-[#17252C] border border-[#DCE5E7] hover:bg-white/90"
+                className="w-full sm:w-auto px-8 py-3.5 text-[13px] sm:text-[14px] font-medium bg-white text-[#17252C] border border-[#DCE5E7] hover:bg-white/90"
               />
             )}
           </div>
